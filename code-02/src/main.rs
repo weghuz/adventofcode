@@ -1,5 +1,7 @@
 fn main() {
-    println!("Hello, world!");
+    let lines = include_str!("../input").lines().collect::<Vec<_>>();
+
+    println!("Total power: {}", day2_part2(lines));
 }
 
 struct Config {
